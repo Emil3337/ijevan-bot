@@ -37,7 +37,7 @@ def main_loop():
                 bot.send_message(CHAT_ID, f"📢 Գտնվեց ազատ օր Իջևանի համար: {found}")
         time.sleep(600)  # 10 րոպե
 
-if name == "__main__":
+if __name__ == "__main__":
     import threading
     threading.Thread(target=main_loop).start()
     bot.polling()
